@@ -22,15 +22,15 @@
                 <div id="row1">
                     <div id="wrap" class="clearfix">
                         <div class="imgContainer image1">
-                            <a href="package.html"><img src="img/myb2.jpg" /></a>
+                            <a href="package.php"><img src="img/myb2.jpg" /></a>
                             <p class="caption">BUSINESS PACKAGE</p>
                         </div>
                         <div class="imgContainer image2">
-                            <a href="invitation.html"><img src="img/kelly-invite.png" /></a>
+                            <a href="invitation.php"><img src="img/kelly-invite.png" /></a>
                             <p class="caption">WEDDING PACKAGE</p>
                         </div>
                         <div class="imgContainer image3">
-                            <a href="website.html"><img src="img/birds.jpg" /></a>
+                            <a href="website.php"><img src="img/birds.jpg" /></a>
                             <p class="caption">WEB DESIGN</p>
                         </div>
                     </div><!-- end div id="wrap" -->
@@ -38,15 +38,15 @@
                 <div id="row2">
                     <div id="wrap" class="clearfix">
                         <div class="imgContainer image3">
-                            <a href="poster.html"><img src="img/arrested2.png" /></a>
+                            <a href="poster.php"><img src="img/arrested2.png" /></a>
                             <p class="caption">POSTER</p>
                         </div>
                         <div class="imgContainer image2">
-                            <a href="illustration.html"><img src="img/animals.png" /></a>
+                            <a href="illustration.php"><img src="img/animals.png" /></a>
                             <p class="caption">ILLUSTRATION</p>
                         </div>
                         <div class="imgContainer image1">
-                            <a href="infographic.html"><img src="img/tattoo-small.png" /></a>
+                            <a href="infographic.php"><img src="img/tattoo-small.png" /></a>
                             <p class="caption">INFOGRAPHIC</p>
                         </div>
                     </div><!-- end div id="wrap" -->
@@ -54,15 +54,15 @@
                 <div id="row3">
                     <div id="wrap" class="clearfix">
                         <div class="imgContainer image1">
-                            <a href="invitation2.html"><img src="img/wedding2.png" /></a>
+                            <a href="invitation2.php"><img src="img/wedding2.png" /></a>
                             <p class="caption">INVITATIONS</p>
                         </div>
                         <div class="imgContainer image2">
-                            <a href="layout.html"><img src="img/cookbook.png" /></a>
+                            <a href="layout.php"><img src="img/cookbook.png" /></a>
                             <p class="caption">MAGAZINE LAYOUT</p>
                         </div>
                         <div class="imgContainer image3">
-                            <a href="covers.html"><img src="img/book.png" /></a>
+                            <a href="covers.php"><img src="img/book.png" /></a>
                             <p class="caption">BOOK COVERS</p>
                         </div>
                     </div><!-- end div id="wrap" -->
@@ -70,15 +70,15 @@
                 <div id="row4">
                     <div id="wrap" class="clearfix">
                         <div class="imgContainer image1">
-                            <a href="poster2.html"><img src="img/records.png" /></a>
+                            <a href="poster2.php"><img src="img/records.png" /></a>
                             <p class="caption">POSTER</p>
                         </div>
                         <div class="imgContainer image2">
-                            <a href="cards.html"><img src="img/aleka-card.png" /></a>
+                            <a href="cards.php"><img src="img/aleka-card.png" /></a>
                             <p class="caption">BUSINESS CARDS</p>
                         </div>
                         <div class="imgContainer image3">
-                            <a href="std.html"><img src="img/kristy-std.jpg" /></a>
+                            <a href="std.php"><img src="img/kristy-std.jpg" /></a>
                             <p class="caption">SAVE THE DATES</p>
                         </div>
                     </div><!-- end div id="wrap" -->
