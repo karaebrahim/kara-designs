@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <?php
+  require_once "util/contact_helper.php";
   require_once "util/layout_helper.php";
+
+  if (!isset($_SESSION)) {
+    session_start();
+  }
 
   LayoutHelper::displayHeadTag();
 ?>
@@ -11,37 +16,38 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div id="wrapper">
+        <form action="contact.php" method="post">
+          <div id="wrapper">
 
 <?php
   LayoutHelper::displayNavigationBar();
   LayoutHelper::displayBanner("banner-contact2.png");
 ?>
-
             <div id="main">
                 <div id="form">
+<?php
+  ContactHelper::sendMailIfUserConfirms();
+?>                
                     <div class="gray-bar-long">
                         <h1>LET'S WORK TOGETHER</h1>
                     </div>
-                    <form action="mailto:kara.ebrahim@gmail.com" method="post" enctype="text/plain">
                         <fieldset class="personal-info">
-                            <label for="name">Name </label><input type="text" name="name" id="name" />
-                            <label for="email">Email </label><input type="email" name="email" id="email" />
+                            <label for="name">Name </label><input type="text" name="name" id="name" required />
+                            <label for="email">Email </label><input type="email" name="email" id="email" required />
                         </fieldset>
                         <fieldset class="checkbox">
                             <label>Type of service (select all that apply)</label></br>
-                            <input type="checkbox" name="web-design"> Web design</br>
-                            <input type="checkbox" name="graphic-design"> Graphic design</br>
-                            <input type="checkbox" name="print-design"> Print design</br>
-                            <input type="checkbox" name="branding"> Branding</br>
-                            <input type="checkbox" name="print-design"> Invitations
+                            <input type="checkbox" name="services[]" value="Web design"> Web design</br>
+                            <input type="checkbox" name="services[]" value="Graphic design"> Graphic design</br>
+                            <input type="checkbox" name="services[]" value="Print design"> Print design</br>
+                            <input type="checkbox" name="services[]" value="Branding"> Branding</br>
+                            <input type="checkbox" name="services[]" value="Invitations"> Invitations
                         </fieldset>
                         <fieldset class="comment-info">
-                            <label class="column">Questions/Comments </label>
-                            <textarea class="comments"></textarea>
-                            <input type="submit" value="Submit" />
+                            <label for="comments" class="column">Questions/Comments </label>
+                            <textarea id="comments" name="comments" class="comments"></textarea>
+                            <input type="submit" name="originalEmailSubmit" value="Send email" />
                         </fieldset>
-                    </form>
                 </div><!-- end div id="form" -->
             </div><!-- end div id="main" -->
 
@@ -50,9 +56,15 @@
 ?>
 
         </div><!-- end div id="wrapper" -->
+<?php
+  ContactHelper::displayEmailModal();
+?>
+      </form>
 
 <?php
   LayoutHelper::loadCommonJavascriptMethods();
+  ContactHelper::showModalIfUserSubmits();
 ?>
+
     </body>
 </html>

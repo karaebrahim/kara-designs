@@ -1,4 +1,5 @@
 <?php
+  require_once "mail_helper.php";
 
   /**
    * Handles all of the layout-related methods, including common headers.
@@ -26,6 +27,7 @@
           <link href='img/arrows.png' rel='shortcut icon' />
           <link rel=\"stylesheet\" href=\"css/normalize.css\">
           <link rel=\"stylesheet\" href=\"css/main.css\">
+          <link rel=\"stylesheet\" href=\"css/bootstrap.css\">
           <script src=\"js/vendor/modernizr-2.6.2.min.js\"></script>
         </head>";
     }
@@ -61,7 +63,8 @@
     public static function displayFooter() {
       echo "<footer>
               <p>
-                <a href=\"mailto:kara@karaebrahim.com\" target=\"_blank\">kara@karaebrahim.com</a>
+                <a href=\"mailto:" . MailHelper::KARA_EMAIL . "\" target=\"_blank\">" .
+                    MailHelper::KARA_EMAIL . "</a>
               </p>
             </footer>";
     }
@@ -75,6 +78,7 @@
         <script>window.jQuery || document.write('<script src=\"js/vendor/jquery-1.9.1.min.js\"><\/script>')</script>
         <script src=\"js/plugins.js\"></script>
         <script src=\"js/main.js\"></script>
+        <script src=\"js/bootstrap.js\"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
