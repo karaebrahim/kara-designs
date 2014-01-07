@@ -24,7 +24,7 @@
                             <h1>KARA EBRAHIM</h1>
                         </div>
                         <p>I’m a Boston-based designer with a passion for graphic and print design, a strong interest in coding and typography, a day job for typesetting and illustration, and a background in unrelated nonsense (publishing, medieval literature, writing, and copyediting).</p>
-                        <p>I love simple design, all things outdoors, sad music, dark beer, and cute dresses.</p>
+                        <p>I love simple modern design, all things outdoors, sad music, dark beer, and cute dresses.</p>
                         <p><a href="contact.php">Contact me.</a> Let’s work together.</p>
                     </div><!-- end div id="text" -->
                 <div>    

@@ -29,6 +29,7 @@
           <link rel=\"stylesheet\" href=\"css/main.css\">
           <link rel=\"stylesheet\" href=\"css/bootstrap.css\">
           <script src=\"js/vendor/modernizr-2.6.2.min.js\"></script>
+          <script src=\"js/picturefill.js\"></script>
         </head>";
     }
 
@@ -37,7 +38,12 @@
      */
     public static function displayNavigationBar() {
       echo "<div id=\"header\">
-                <a href=\"index.php\"><img src=\"img/logo4.png\" /></a>
+                <a href=\"index.php\">
+                  <span data-picture>
+                    <span data-src=\"img/logo4.png\" data-media=\"(min-width: 1001px)\"></span>
+                    <span data-src=\"img/logo6.png\" data-media=\"(max-width: 1000px)\"></span>
+                  </span>
+                </a>
                 <nav class=\"clearfix\">
                     <ul>
                         <li><a href=\"index.php\">PORTFOLIO</a></li>
@@ -76,7 +82,6 @@
       echo "
         <script src=\"//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js\"></script>
         <script>window.jQuery || document.write('<script src=\"js/vendor/jquery-1.9.1.min.js\"><\/script>')</script>
-        <script src=\"js/plugins.js\"></script>
         <script src=\"js/main.js\"></script>
         <script src=\"js/bootstrap.js\"></script>
 
