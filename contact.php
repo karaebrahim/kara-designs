@@ -16,7 +16,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <form action="contact.php" method="post">
+        <form id="contactform" action="contact.php" method="post">
           <div id="wrapper">
 
 <?php
