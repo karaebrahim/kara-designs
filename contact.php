@@ -46,7 +46,7 @@
                         <fieldset class="comment-info">
                             <label for="comments" class="column">Questions/Comments </label>
                             <textarea id="comments" name="comments" class="comments"></textarea>
-                            <input type="submit" name="originalEmailSubmit" value="Send email" />
+                            <input type="submit" name="originalEmailSubmit" class="btn" value="Send email" />
                         </fieldset>
                 </div><!-- end div id="form" -->
             </div><!-- end div id="main" -->
