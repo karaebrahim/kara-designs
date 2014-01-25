@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <?php
-  require_once "util/contact_helper.php";
-  require_once "util/layout_helper.php";
-
   if (!isset($_SESSION)) {
     session_start();
   }
+
+  require_once "util/contact_helper.php";
+  require_once "util/layout_helper.php";
 
   LayoutHelper::displayHeadTag();
 ?>
