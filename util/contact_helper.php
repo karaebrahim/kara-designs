@@ -19,9 +19,13 @@
                 <p>Please confirm that you'd like to send the following email to Kara Designs:</p>";
       if (isset($_POST["originalEmailSubmit"])) {
         // If user tries to send contact email, modal will show what will be emailed.
-        echo "<strong>From:</strong> " . stripslashes(trim($_POST["name"])) . " &lt;" .
-             stripslashes(trim($_POST["email"])) . "&gt;<br/><br/>" .
-             ContactHelper::getMessage($_POST["services"], $_POST["comments"]);
+        $servicesString = array_key_exists("services", $_POST) ? $_POST["services"] : null;
+        $commentsString = array_key_exists("comments", $_POST) ? $_POST["comments"] : null;
+        $name = stripslashes(trim($_POST["name"]));
+        $email = stripslashes(trim($_POST["email"]));
+
+        echo "<strong>From:</strong> " . $name . " &lt;" . $email . "&gt;<br/><br/>" .
+             ContactHelper::getMessage($servicesString, $commentsString);
 
         // Store form values in session to be used if user confirms.
         ContactHelper::storeInSession("name");
@@ -82,7 +86,7 @@
      * Returns the email message based on the user-specified services and comments.
      */
     private static function getMessage($serviceArray, $commentsString) {
-      $message = "Hi! I'd like to work together!<br/><br/>";
+      $message = "";
       if (isset($serviceArray)) {
         $message .= "<strong>Type of service:</strong><br/><ul>";
         foreach ($serviceArray as $service) {
@@ -103,9 +107,7 @@
      * key.
      */
     private static function storeInSession($key) {
-      if (array_key_exists($key, $_POST)) {
-        $_SESSION[$key] = $_POST[$key];
-      }
+      $_SESSION[$key] = array_key_exists($key, $_POST) ? $_POST[$key] : null;
     }
 
     /**
