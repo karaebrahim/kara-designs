@@ -11,7 +11,7 @@
      */
     public static function sendContactMail($fromName, $fromEmail, $message) {
       $to = MailHelper::KARA_EMAIL;
-      $subject = "Contact from " . $fromName . " via karaebrahim.com";
+      $subject = "Contact from " . $fromName . " (" . $fromEmail . ") via karaebrahim.com";
 
       // set headers
       $headers  = "From: KaraEbrahim.com <noreply@karaebrahim.com>\r\n";
