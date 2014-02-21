@@ -224,6 +224,10 @@ p.show{
     padding-bottom:40px;
 }
 
+.about-pic img{
+    width:98%;
+}
+
 #text{
     float:left;
     width:52%;
