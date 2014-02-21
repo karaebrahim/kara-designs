@@ -29,8 +29,8 @@
                         <p class="caption">WEDDING PACKAGE</p>
                     </div>
                     <div class="imgContainer image3">
-                        <a href="website.php"><img src="img/birds.jpg" /></a>
-                        <p class="caption">WEB DESIGN</p>
+                        <a href="invitation3.html"><img src="img/gaynes-wedding-small.png" /></a>
+                        <p class="caption">INVITATIONS</p>
                     </div>
                     <div class="imgContainer image3">
                         <a href="poster.php"><img src="img/arrested2.png" /></a>

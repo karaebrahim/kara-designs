@@ -19,9 +19,9 @@
 ?>
 
             <div id="arrows">
-                <a href="package.php"><img src="img/left-arrow.png" /></a>
-                <a href="website.php"><img src="img/right-arrow.png" /></a>
-                <a href="index.php"><img src="img/x.png" /></a>
+                <a href="package.html"><img src="img/left-arrow.png" /></a>
+                <a href="invitation3.html"><img src="img/right-arrow.png" /></a>
+                <a href="index.html"><img src="img/x.png" /></a>
             </div>
 
             <div id="main">

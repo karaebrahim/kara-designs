@@ -27,10 +27,9 @@
             <div id="main">
                 <div id="portfolio">
                     <div id="images" class="clearfix">
-                        <img src="img/ampersand2.png" />
-                        <img src="img/birds-homepage.png" />
+                        <img src="img/gaynes-wedding.png" />
                     </div><!-- end div id="images" -->
-                    <p class="first last">Here's a Wordpress design I created for a fictional clothing company. It includes a home page, a product page, and a blog.</p>
+                    <p class="first last">Here's an invitation I created for a couple who was interested in a vintage Boston theme.</p>
                 </div><!-- end div id="portfolio" -->
             </div><!-- end div id="main" -->
 
