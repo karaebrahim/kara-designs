@@ -29,7 +29,7 @@
                         <p class="caption">WEDDING PACKAGE</p>
                     </div>
                     <div class="imgContainer image3">
-                        <a href="invitation3.html"><img src="img/gaynes-wedding-small.png" /></a>
+                        <a href="invitation3.php"><img src="img/gaynes-wedding-small.png" /></a>
                         <p class="caption">INVITATIONS</p>
                     </div>
                     <div class="imgContainer image3">
