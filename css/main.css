@@ -105,6 +105,20 @@ body{
     background:white;
 }
 
+h1 {
+    line-height: 1.4;
+    margin: 0.67em 0;
+}
+
+label {
+    display: inline;
+    font-size: 1em;
+}
+
+strong {
+    font-family: 'Muli Bold', sans-serif;
+}
+
 /* header styles */
 
 #header{
@@ -128,9 +142,14 @@ nav{
     margin-top:12px;
 }
 
+nav ul{
+    margin: 14px 0 14px;
+}
+
 nav li{
     text-align:right;
     padding-bottom:10px;
+    line-height: 1.4;
 }
 
 nav a{
@@ -147,6 +166,12 @@ nav a:hover{
     background-image:url("../img/arrows.png");
     background-repeat:no-repeat;
     background-position:right;
+    text-decoration: none;
+}
+
+nav a:focus{
+    color: white;
+    text-decoration: none;
 }
 
 /* banner styles (with blue flag) */
@@ -317,12 +342,14 @@ p.show{
 #form input[type="text"], #form input[type="email"]{
     width:100%;
     margin-bottom:20px;
+    padding: 4px 0;
 }
 
 #form textarea{
     width:100%;
     height:200px;
     margin-bottom:7px;
+    padding: 4px 0;
 }
 
 #form input[type="submit"]{
@@ -330,8 +357,19 @@ p.show{
     margin-bottom:30px;
 }
 
+#contactform {
+    margin: 0;
+}
+
 .checkbox{
     margin-bottom:15px;
+    padding-left: 0;
+}
+
+.checkbox input[type="checkbox"] {
+    margin: 0;
+    float: none;
+    font-size: 100%;
 }
 
 /* footer styles */
