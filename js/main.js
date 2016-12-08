@@ -1,4 +1,6 @@
-$(function(){
+
+
+  $(function(){
 		if($(window).width()>=768){
 			$(".imgContainer").hover(function(){
 				$(this).children("p.caption").stop().animate({"margin-top":"-65px"}, 500);
